@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="label.css">
+  <link rel="stylesheet" href="flexslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="jquery.flexslider.js"></script>
+  <script src="https://kit.fontawesome.com/7d55a4ffaa.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <title>WORKSHOP</title>
+
+  <script type="text/javascript">/*Turn程式*/
+  var JQ=$.noConflict();//刪除「$」別名並且用新別名「JQ」當作JQuery
+  //取代「$」符號的別名後，如果要使用JQuery就要用自己宣告的新別名「JQ」當別名
+  JQ(function(){
+      //程式碼內容
+      JQ('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+      })
+      JQ('.slide').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+      })
+  });
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+  </script>
+</head>
+<body>
+  <div class="header" style="z-index:9999;position: relative;">
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul class="menu">
+      <a href="#">Home</a>
+      <a href="#wrap">Photo</a>
+      <a href="#gallery-section">Gallery</a>
+      <a href="#footer">Contact</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+  <div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="slide1.jpg" >
+    </li>
+    <li>
+      <img src="slide2.jpg" />
+    </li>
+    <li>
+      <img src="slide3.jpg" />
+    </li>
+  </ul>
+  </div>
+
+
+  <!-- <div class="container">
+    <img src="img/1.jpg" id="first">
+  </div> -->
+  <div class="container2">
+    <img src="img/4.jpg">
+  </div>
+  <div class="container3">
+    <div style=" display:inline-block;">
+      <img src="img/2.jpg">
+    </div>
+    <div style=" display:inline-block;">
+      13e2112
+    </div>
+    <div></div>
+    <div style=" display:inline-block;">
+      fhthrthtrh
+    </div>
+    <div style=" display:inline-block;">
+      <img src="img/3.jpg">
+    </div>
+  </div>
+  <div>
+    sdfsdfsdv
+  </div>
+  <div class="gallery-section" id="gallery-section">
+    <div class="inner-width">
+      <h1>Portfolio</h1>
+      <div class="border"></div>
+      <div class="gallery">
+
+        <a href="img2/1.jpg" class="image">
+          <img src="img2/1.jpg" alt="">
+        </a>
+        <a href="img2/2.jpg" class="image">
+          <img src="img2/2.jpg" alt="">
+        </a>
+        <a href="img2/3.jpg" class="image">
+          <img src="img2/3.jpg" alt="">
+        </a>
+        <a href="img2/4.jpg" class="image">
+          <img src="img2/4.jpg" alt="">
+        </a>
+        <a href="img2/5.jpg" class="image">
+          <img src="img2/5.jpg" alt="">
+        </a>
+        <a href="img2/6.jpg" class="image">
+          <img src="img2/6.jpg" alt="">
+        </a>
+        <a href="img2/7.jpg" class="image">
+          <img src="img2/7.jpg" alt="">
+        </a>
+        <a href="img2/8.jpg" class="image">
+          <img src="img2/8.jpg" alt="">
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+    $('.gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    })
+    $('.slide').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    })
+  </script> -->
+</body>
+</html>
